@@ -1,0 +1,29 @@
+Parvathy Udayan
+Data & AI Engineer | Accenture
+
+Summary:
+Highly motivated Data Engineer with hands-on experience in real-time data pipelines, Python automation, Power BI dashboards, NLP projects, and machine learning models. 
+
+Technical Skills:
+- Programming: Python
+- Databases: SQL, Snowflake, MongoDB
+- Cloud: Azure, Google Cloud
+- Data Engineering: Kafka, Structured Streaming
+- Analytics: Power BI, Excel
+- ML/AI: Sklearn, NLP, Computer Vision
+
+Professional Experience:
+Accenture, Packaged App Development Associate (Sept 2024 – Present)
+- Built real-time data pipelines using Kafka and Spark Structured Streaming.
+- Automated service ticket analysis using Python and NLP.
+- Designed data dashboards for product usage insights.
+
+Certifications:
+- SnowPro Gen AI
+- Azure Fundamentals
+- Google Cloud Fundamentals
+- MongoDB Associate
+- Power BI
+
+Career Goals:
+Become a Business Analyst and secure a position in a Big 4 company.

@@ -1,0 +1,17 @@
+Sample Interview Answers for Improvement
+
+Question: Tell me about yourself.
+Answer:
+I am a Data Engineering professional with experience building real-time data pipelines and analyzing customer support patterns. I enjoy solving business challenges with data and automation.
+
+Question: What is your biggest strength?
+Answer:
+I am highly analytical and fast-learning. I quickly understand new tools and technologies and apply them to solve practical problems.
+
+Question: What is your weakness?
+Answer:
+I sometimes take on too many tasks at once, but I have started prioritizing more effectively using planning tools.
+
+Question: Why Amazon?
+Answer:
+Amazon is a highly data-driven organization where analysts can make a real business impact. I want to work in a culture that values ownership and innovation.

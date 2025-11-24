@@ -1,0 +1,22 @@
+Amazon – Data Analyst
+
+Responsibilities:
+- Analyze large datasets to generate actionable business insights.
+- Build dashboards and data visualizations to influence product decisions.
+- Partner with product, engineering, and research teams.
+- Create automated data pipelines and reporting tools.
+
+Required Skills:
+- SQL (Advanced)
+- Excel / Sheets
+- Python or R for analytics
+- Experience with dashboarding tools like Power BI or Tableau
+- Statistical analysis and experimentation
+
+Preferred Skills:
+- Experience with cloud data platforms
+- Machine learning knowledge
+- Experience working with large, complex datasets
+
+About Amazon:
+Amazon is a fast-paced environment where analysts are expected to be self-driven, curious, and highly analytical.

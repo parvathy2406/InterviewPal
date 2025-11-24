@@ -1,0 +1,8 @@
+streamlit
+Pillow
+groq
+pandas
+numpy
+scikit-learn
+sentence-transformers
+serpapi

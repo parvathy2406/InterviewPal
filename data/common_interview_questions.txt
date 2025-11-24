@@ -1,0 +1,17 @@
+General Data Analyst Interview Questions:
+
+1. Explain left, right, inner, and outer joins.
+2. How would you handle missing values in a dataset?
+3. What is the difference between OLAP and OLTP?
+4. Explain a situation where your analysis changed a decision.
+5. What is a primary key and foreign key?
+6. How do you ensure data quality?
+7. Explain a time you worked with unstructured data.
+8. What is hypothesis testing?
+9. Why should we hire you?
+10. Where do you see yourself in 5 years?
+
+Behavioral / HR:
+- Tell me about yourself.
+- Describe a time you failed and what you learned.
+- How do you handle tight deadlines?
