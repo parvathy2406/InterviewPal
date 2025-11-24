@@ -1,6 +1,3 @@
-"""
-Load and preprocess documents (txt / pdf) and simple chunker.
-"""
 from typing import List
 
 def load_txt(path: str) -> str:
@@ -33,7 +30,7 @@ def chunk_text(text, chunk_size=1000, overlap=100):
     chunks = []
     length = len(text)
 
-    # Hard safety limit to avoid memory explosion
+    # To avoid memory explosion
     max_allowed_size = 1000000  # 1 million characters
 
     if length > max_allowed_size:
