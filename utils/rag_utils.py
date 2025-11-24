@@ -1,7 +1,3 @@
-"""
-Simple RAG utilities: a minimal local vector store scaffold using numpy persistence.
-For production use a real vector DB (Chroma, FAISS with persistence, Weaviate, Pinecone, etc.).
-"""
 import os, json
 import numpy as np
 from models.embeddings import get_embeddings
