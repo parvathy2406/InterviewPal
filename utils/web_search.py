@@ -1,7 +1,3 @@
-"""
-Simple SerpAPI web search wrapper. If you prefer Bing or Google APIs, replace accordingly.
-Requires SERPAPI_KEY environment variable to be set.
-"""
 import os, requests
 
 SERPAPI_KEY = os.getenv('SERPAPI_KEY', '')
