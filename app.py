@@ -7,7 +7,7 @@ from utils.groq_utils import query_groq
 from config.config import Config
 import os
 
-# --- Streamlit page setup ---
+# Streamlit page setup 
 st.set_page_config(page_title='InterviewPal AI', layout='wide')
 logo = Image.open('assets/InterviewPal_logo.png')
 st.image(logo, width=160)
@@ -15,20 +15,20 @@ st.image(logo, width=160)
 st.title('InterviewPal — Personalized Interview Coach')
 st.write('Upload resumes, job descriptions, and ask practice interview questions.')
 
-# Show path to the case-study PDF (provided)
+# Show path to the case-study PDF 
 st.info('Case study template (provided): /mnt/data/NeoStats AI Engineer Case Study.pdf')
 
-# --- File uploader ---
+# File uploader
 uploaded = st.file_uploader(
     'Upload resume(s) or job descriptions (pdf / txt)',
     accept_multiple_files=True
 )
 
-# --- Vector store session ---
+# Vector store session 
 if 'vs' not in st.session_state:
     st.session_state.vs = SimpleVectorStore()
 
-# --- Process uploads ---
+# To process uploads
 docs = []
 if uploaded:
     os.makedirs('data', exist_ok=True)
@@ -47,19 +47,19 @@ if uploaded:
         st.session_state.vs.upsert_documents(docs)
         st.success('Documents indexed for retrieval.')
 
-# --- Response mode selector ---
+# To select response modes
 mode = st.radio('Response Mode', ['Concise', 'Detailed'])
 
-# --- User prompt ---
+# Prompts from user
 prompt = st.text_input('Ask a question or start a mock-interview:')
 
-# --- Handle query ---
+# Hadle query
 if st.button('Submit') and prompt:
 
     # Combine uploaded document text for Groq context
     doc_text = "\n".join(docs[:5])  # limit to first 5 docs to avoid huge prompts
 
-    # 1️⃣ Query Groq with document context
+    #  To Query Groq with document context
     groq_results = []
     if Config.GROQ_API_KEY:
         groq_prompt = f"Here are the user's uploaded documents:\n{doc_text}\n\nQuestion: {prompt}" if doc_text else prompt
@@ -74,7 +74,7 @@ if st.button('Submit') and prompt:
                 for r in groq_results:
                     st.write(f"- {r}\n")
 
-    # 2️⃣ Fallback to local documents if Groq returned nothing
+    # To Fallback to local documents if Groq returned nothing
     if not groq_results and docs:
         hits = st.session_state.vs.retrieve(prompt, k=6)
         if hits:
@@ -86,7 +86,7 @@ if st.button('Submit') and prompt:
                 for h in hits:
                     st.write(f"- {h}\n")
 
-    # 3️⃣ Fallback to web search if nothing else
+    # To Fallback to web search if nothing else
     if not groq_results and (not docs or not hits):
         web = serpapi_search(prompt, num=3)
         st.subheader(f'Result — {mode} (Web Fallback)')
