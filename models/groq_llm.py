@@ -8,7 +8,7 @@ def groq_answer(prompt):
     client = Groq(api_key=Config.GROQ_API_KEY)
 
     resp = client.chat.completions.create(
-        model="llama3-8b-8192",   # Free and fast
+        model="llama3-8b-8192",  
         messages=[
             {"role": "system", "content": "You are a helpful interview preparation coach."},
             {"role": "user", "content": prompt}
